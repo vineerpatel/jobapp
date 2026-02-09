@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Helper - Profile</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Job Application Helper</h1>
+      <p>Save your profile to autofill common job application fields.</p>
+    </header>
+
+    <main>
+      <form id="profile-form">
+        <section>
+          <h2>Contact</h2>
+          <div class="grid">
+            <label>
+              First name
+              <input name="firstName" type="text" autocomplete="given-name" />
+            </label>
+            <label>
+              Last name
+              <input name="lastName" type="text" autocomplete="family-name" />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" />
+            </label>
+            <label>
+              Phone
+              <input name="phone" type="tel" autocomplete="tel" />
+            </label>
+            <label class="full">
+              Address
+              <input name="address" type="text" autocomplete="street-address" />
+            </label>
+            <label>
+              City
+              <input name="city" type="text" autocomplete="address-level2" />
+            </label>
+            <label>
+              State/Region
+              <input name="state" type="text" autocomplete="address-level1" />
+            </label>
+            <label>
+              Postal code
+              <input name="postalCode" type="text" autocomplete="postal-code" />
+            </label>
+            <label>
+              Country
+              <input name="country" type="text" autocomplete="country-name" />
+            </label>
+          </div>
+        </section>
+
+        <section>
+          <h2>Work & Education</h2>
+          <div class="grid">
+            <label>
+              Current title
+              <input name="currentTitle" type="text" />
+            </label>
+            <label>
+              Current company
+              <input name="currentCompany" type="text" />
+            </label>
+            <label>
+              Years of experience
+              <input name="experienceYears" type="number" min="0" step="1" />
+            </label>
+            <label>
+              Highest education
+              <input name="educationLevel" type="text" />
+            </label>
+            <label class="full">
+              LinkedIn / Portfolio URL
+              <input name="portfolioUrl" type="url" />
+            </label>
+            <label class="full">
+              Skills (comma-separated)
+              <input name="skills" type="text" />
+            </label>
+          </div>
+        </section>
+
+        <section>
+          <h2>Demographics (Optional)</h2>
+          <p class="hint">
+            These fields are optional and should only be filled when you explicitly choose to disclose.
+          </p>
+          <div class="grid">
+            <label>
+              Gender
+              <input name="gender" type="text" />
+            </label>
+            <label>
+              Race
+              <input name="race" type="text" />
+            </label>
+            <label>
+              Ethnicity
+              <input name="ethnicity" type="text" />
+            </label>
+            <label>
+              Disability status
+              <input name="disabilityStatus" type="text" />
+            </label>
+            <label>
+              Veteran status
+              <input name="veteranStatus" type="text" />
+            </label>
+          </div>
+        </section>
+
+        <section class="actions">
+          <button type="submit">Save profile</button>
+          <span id="status" role="status" aria-live="polite"></span>
+        </section>
+      </form>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>
