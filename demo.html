@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Helper Demo</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 32px;
+      }
+
+      .form {
+        display: grid;
+        gap: 12px;
+        max-width: 520px;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demo form</h1>
+    <div class="form">
+      <label>First name <input type="text" name="firstName" /></label>
+      <label>Last name <input type="text" name="lastName" /></label>
+      <label>Email address <input type="email" name="email" /></label>
+      <label>Gender <input type="text" name="gender" /></label>
+      <label>Veteran status
+        <select>
+          <option value="">Select</option>
+          <option>Not a veteran</option>
+          <option>Veteran</option>
+        </select>
+      </label>
+      <label>Work authorization <input type="text" name="workAuth" /></label>
+    </div>
+    <p>This page is only for taking a screenshot of the extension's missing-info panel.</p>
+  </body>
+</html>
